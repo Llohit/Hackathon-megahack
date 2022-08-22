@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BingeFlix</title>
+    <link rel="stylesheet" href="CSS/Homepage.css">
+    <link rel="icon" href="https://img.icons8.com/wired/64/000000/tv-show.png"/>
+    <script src="https://kit.fontawesome.com/409e648f2a.js"></script>
+    <style type="text/css">
+        
+                .Title{
+              overflow: hidden; /* Ensures the content is not revealed until the animation */
+              border-right: .15em solid orange; /* The typwriter cursor */
+              white-space: nowrap; /* Keeps the content on a single line */
+              margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+              letter-spacing: .15em; /* Adjust as needed */
+              animation: 
+                typing 10s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        /* The typing effect */
+        @keyframes typing {
+          from { width: 0 }
+          to { width: 100% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+          from, to { border-color: transparent }
+          50% { border-color: transparent; }
+        }
+        
+        .Container{
+        position: relative;
+        width: 30%;
+        height: 375px;
+        float: left;
+        margin: 1.6%;
+        background-size: 100%;
+        background-position: center;
+        transition: 0.5s;
+    }
+    </style>
+</head>
+<body style="
+            background: url(https://arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/WIPIK7XWQAI6TOHSSNY7URDNG4.jpg) no-repeat center center fixed; 
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             -o-background-size: cover;
+             background-size: cover;">
+        <ul>
+      <li><a href="http://localhost/Hackathon/Homepage.php" class="active">Home</a></li>
+      <li>
+          <div class="Categories">
+            <button class="Categoriesbtn">Categories</button>
+            <div class="Categories-content">
+                <a href="Action_and_Adventure.html">Action and Adventure</a>
+                <a href="Comedy.html">Comedy</a>
+                <a href="Drama.html">Drama</a>
+                <a href="Crime.html">Crime</a>
+                <a href="Romance.html">Romance</a>
+            </div>
+          </div>
+      </li>
+      <li><a href="Contacts.html">Contact</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+    <h1 class="Title" style="text-shadow: 2px 2px 30px red; text-align: center; color: lightpink; font-size: 3em;">Contact Us</h1>
+    <div class="Container">
+        <i class="fas fa-phone" style="font-size:100px;color:pink; padding-left: 38%"></i>
+        <h2 style="text-align: center; color:pink;">Shikha : +91 9930046772<br><br>
+            Sahil : +91 9511889930<br><br>
+			Pavan : +91 9762144042<br><br>
+			Lohit : +91 9619319487
+        </h2>
+    </div>
+    
+    <div class="Container">
+        <i class="fas fa-map-marked-alt" style="font-size:100px;color:pink; padding-left: 38%"></i><br><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.891666500123!2d72.85360841419977!3d19.243552586992056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b13affffffff%3A0xfd071f1d3a7844ef!2sSt.%20Francis%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1602488063921!5m2!1sen!2sin" width="100%" height="275px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    
+    <div class="Container">
+        <i class="fas fa-envelope" style="font-size:100px;color:pink; padding-left: 38%"></i>
+        <h2 style="text-align: center; color:pink;">Shikha: <a style="text-decoration: none; color: pink;" href="mailto:shikhashah02.ss@gmail.com">shikhashah02.ss@gmail.com</a><br><br>
+            Sahil: <a style="text-decoration: none; color: pink;" href="mailto:sahil1267710@gmail.com">sahil1267710@gmail.com</a><br><br>
+			Pavan: <a style="text-decoration: none; color: pink;" href="mailto:pavan996066@gmail.com">pavan996066@gmail.com</a><br><br>
+            Lohit: <a style="text-decoration: none; color: pink;" href="mailto:lohit.poojary432@gmail.com">lohit.poojary432@gmail.com</a>
+        </h2>        
+    </div>
+</body>
+</html>

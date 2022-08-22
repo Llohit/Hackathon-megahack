@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BingeFlix</title>
+    <link rel="icon" href="https://img.icons8.com/wired/64/000000/tv-show.png"/>
+    <link rel="stylesheet" href="CSS/CategoryOnClick.css">
+</head>
+<body style="
+            background: url(https://images.cinemaexpress.com/uploads/user/imagelibrary/2019/5/23/original/666a5d6d38291e93_bbt_sp_hero_landscape.jpg) no-repeat center center fixed; 
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             -o-background-size: cover;
+             background-size: cover;">
+    <h1 style="text-shadow: 2px 2px 15px black">The Big Bang Theory</h1><br><br><br><br><br>
+       <pre style="color: black; text-shadow: 2px 2px 15px white;">
+            Leonard and Sheldon are brilliant physicists, but none of that
+            genius helps them interact with people, especially women. All
+            this begins to change when a free-spirited beauty, Penny, moves
+            in next door. Sheldon is content spending his nights playing
+            Klingon Boggle with their socially dysfunctional friends.
+            However, Leonard sees in Penny a whole new universe of
+            possibilities ... including love.
+            Starring            Johnny Galecki, Jim Parsons, Kaley Cuoco 
+            Genres	        Comedy
+            Audio languages	English
+       </pre><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2 style="text-shadow: 2px 2px 15px black">IMDb 8.1</h2><br>
+    <label style="text-shadow: 2px 2px 15px black" for="Trailer">Click here for the </label>
+    <input type="button" id="Trailer" name="Trailer" value="Trailer" onclick="iframe()">
+    <div id="demo"></div>
+    <script type="text/javascript">
+        function iframe(){
+              document.getElementById("demo").innerHTML = "<iframe width=\"700\" height=\"394\" src=\"https://www.youtube.com/embed/rCj-Fb1OmXg\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+              document.body.style.background='black';
+        }
+    </script>
+        <label style="text-shadow: 2px 2px 15px black;" for="Season">Seasons Available : </label>
+    <select style="font-size: 0.7em" id="Season" name="Season">
+        <option value="Season 1">Season 1</option>
+        <option value="Season 2">Season 2</option>
+        <option value="Season 3">Season 3</option>
+        <option value="Season 4">Season 4</option>
+        <option value="Season 5">Season 5</option>
+        <option value="Season 6">Season 6</option>
+        <option value="Season 7">Season 7</option>
+        <option value="Season 8">Season 8</option>
+        <option value="Season 9">Season 9</option>
+        <option value="Season 9">Season 10</option>
+        <option value="Season 9">Season 11</option>
+        <option value="Season 9">Season 12</option>
+    </select>
+	<br><br><br>
+	<form name="form" id="myForm" method="POST" action="Rate69.php">
+			<h2>Your Ratings</h2><br></br>
+			<h2>Ratings: <input type="range" id="myRange" name="ratings" min="0" max="5"  step="0.1"></h2>
+			<h2><p>Value: <span id="demo1" ></span></p><br></br></h2>
+			<input type="submit" class="button1" value="Submit" name="action_button4"><br></br>
+			</form>
+<script>
+	var slider = document.getElementById("myRange");
+	var output = document.getElementById("demo1");
+	output.innerHTML = slider.value;
+
+	slider.oninput = function() {
+	output.innerHTML = this.value;
+}
+
+</script>
+</body>
+</html>

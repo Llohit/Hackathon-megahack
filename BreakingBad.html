@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BingeFlix</title>
+    <link rel="icon" href="https://img.icons8.com/wired/64/000000/tv-show.png"/>
+    <link rel="stylesheet" href="CSS/CategoryOnClick.css">
+</head>
+<body style="
+             background: url(https://wallpaperaccess.com/full/781822.jpg) no-repeat center center fixed; 
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             -o-background-size: cover;
+             background-size: cover;">
+    <h1 style="text-shadow: 2px 2px 15px black">Breaking Bad</h1><br><br><br><br><br><br>
+       <pre style="color: black">
+            Walter White, a chemistry teacher, discovers that he has cancer
+            and decides to get into the meth-making business to repay his
+            medical debts. His priorities begin to change when he partners 
+            with Jesse.
+            Starring            Bryan Cranston, Aaron Paul, Anna Gunn
+            Genres	        Drama
+            Audio languages	English, Spanish
+       </pre><br><br><br><br><br><br><br><br><br>
+    <h2 style="text-shadow: 2px 2px 15px black">IMDb 9.5</h2><br>
+    <label style="text-shadow: 2px 2px 15px black" for="Trailer">Click here for the  </label>
+    <input type="button" id="Trailer" name="Trailer" value="Trailer" onclick="iframe()">
+    <div id="demo"></div>
+    <script type="text/javascript">
+        function iframe(){
+              document.getElementById("demo").innerHTML = "<iframe width=\"871\" height=\"490\" src=\"https://www.youtube.com/embed/lrcqbavlbyQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+              document.body.style.background='black';
+        }
+    </script><br>
+        <label style="text-shadow: 2px 2px 15px black" for="Season">Seasons Available : </label>
+    <select id="Season" name="Season">
+        <option value="Season 1">Season 1</option>
+        <option value="Season 2">Season 2</option>
+        <option value="Season 3">Season 3</option>
+        <option value="Season 4">Season 4</option>
+        <option value="Season 5">Season 5</option>
+    </select>
+	<br><br><br>
+	<form name="form" id="myForm" method="POST" action="Rate69.php">
+			<h2>Your Ratings</h2><br></br>
+			<h2>Ratings: <input type="range" id="myRange" name="ratings" min="0" max="5"  step="0.1"></h2>
+			<h2><p>Value: <span id="demo1" ></span></p><br></br></h2>
+			<input type="submit" class="button1" value="Submit" name="action_button6"><br></br>
+			</form>
+<script>
+	var slider = document.getElementById("myRange");
+	var output = document.getElementById("demo1");
+	output.innerHTML = slider.value;
+
+	slider.oninput = function() {
+	output.innerHTML = this.value;
+}
+
+</script>
+</body>
+</html>

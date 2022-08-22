@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BingeFlix</title>
+    <link rel="icon" href="https://img.icons8.com/wired/64/000000/tv-show.png"/>
+    <link rel="stylesheet" href="CSS/CategoryOnClick.css">
+</head>
+<body style="
+             background: url(https://thebingefixblog.files.wordpress.com/2016/02/narcos1.jpg) no-repeat center center fixed; 
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             -o-background-size: cover;
+             background-size: cover;">
+    <h1>Narcos</h1><br><br><br><br><br><br>
+       <pre>
+            Narcos is an American crime drama television series created and produced by
+            Chris Brancato, Carlo Bernard, and Doug Miro. Set and filmed in Colombia, 
+            seasons 1 and 2 are based on the story of drug kingpin Pablo Escobar, who
+            became a billionaire through the production and distribution of cocaine.
+            Starring            Pedro Pascal, Wagner Moura, Boyd Holbrook
+            Genres	        Crime, Drama
+            Audio languages	English, Spanish
+       </pre><br><br><br><br><br><br><br><br><br>
+    <h2>IMDb 8.8</h2><br>
+    <label for="Trailer">Click here for the  </label>
+    <input type="button" id="Trailer" name="Trailer" value="Trailer" onclick="iframe()">
+    <div id="demo"></div>
+    <script type="text/javascript">
+        function iframe(){
+              document.getElementById("demo").innerHTML = "<iframe width=\"871\" height=\"490\" src=\"https://www.youtube.com/embed/RNWAKZzgbp4\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+              document.body.style.background='black';
+        }
+    </script><br>
+        <label for="Season">Seasons Available : </label>
+    <select id="Season" name="Season">
+        <option value="Season 1">Season 1</option>
+        <option value="Season 2">Season 2</option>
+        <option value="Season 3">Season 3</option>
+    </select>
+	<br><br><br>
+	<form name="form" id="myForm" method="POST" action="Rate69.php">
+			<h2>Your Ratings</h2><br></br>
+			<h2>Ratings: <input type="range" id="myRange" name="ratings" min="0" max="5"  step="0.1"></h2>
+			<h2><p>Value: <span id="demo1" ></span></p><br></br></h2>
+			<input type="submit" class="button1" value="Submit" name="action_button9"><br></br>
+			</form>
+<script>
+	var slider = document.getElementById("myRange");
+	var output = document.getElementById("demo1");
+	output.innerHTML = slider.value;
+
+	slider.oninput = function() {
+	output.innerHTML = this.value;
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BingeFlix</title>
+    <link rel="icon" href="https://img.icons8.com/wired/64/000000/tv-show.png"/>
+    <link rel="stylesheet" href="CSS/CategoryOnClick.css">
+</head>
+<body style="
+            background: url(https://occ-0-2461-2164.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABf7ZUbW_5kIN32GZoG0fG1uWzJYoPFYFw4APvdnRnCyicJu9C0k2TjzJK2oZp3FGlNmaWEQvuGUQs2p_a6j08sKWnL87.jpg?r=6a2) no-repeat center center fixed; 
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             -o-background-size: cover;
+             background-size: cover;">
+    <h1>Sacred Games</h1><br><br><br><br><br>
+       <pre>
+            Sartaj Singh (Saif Ali Khan) is a troubled police officer in Mumbai
+            who receives a phone call from gangster Ganesh Gaitonde (Nawazuddin Siddiqui),
+            who tells him to save the city within 25 days. The series chronicles the
+            events that follow.
+            Starring	        Saif Ali Khan, Nawazuddin Siddiqui, Radhikha Apte
+            Genres	        Action and Adventure, Crime
+            Audio languages	Hindi
+       </pre><br><br><br><br><br><br><br><br><br><br>
+    <h2>IMDb 8.7</h2><br>
+    <label for="Trailer">Click here for the  </label>
+    <input type="button" id="Trailer" name="Trailer" value="Trailer" onclick="iframe()">
+    <div id="demo"></div>
+    <script type="text/javascript">
+        function iframe(){
+              document.getElementById("demo").innerHTML = "<iframe width=\"700\" height=\"394\" src=\"https://www.youtube.com/embed/w-Xe8gLBc5I\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+              document.body.style.background='black';
+        }
+    </script><br>
+        <label for="Season">Seasons Available : </label>
+    <select id="Season" name="Season">
+        <option value="Season 1">Season 1</option>
+        <option value="Season 2">Season 2</option>
+    </select>
+	<br><br><br>
+	<form name="form" id="myForm" method="POST" action="Rate69.php">
+			<h2>Your Ratings</h2><br></br>
+			<h2>Ratings: <input type="range" id="myRange" name="ratings" min="0" max="5"  step="0.1"></h2>
+			<h2><p>Value: <span id="demo1" ></span></p><br></br></h2>
+			<input type="submit" class="button1" value="Submit" name="action_button2"><br></br>
+			</form>
+<script>
+	var slider = document.getElementById("myRange");
+	var output = document.getElementById("demo1");
+	output.innerHTML = slider.value;
+
+	slider.oninput = function() {
+	output.innerHTML = this.value;
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+h1{
+    float: left; color: aliceblue; font-size: 3em; text-shadow: 2px 2px 15px pink;
+}
+
+pre{
+    position: absolute; left: -100px;
+    font-size: 1.3em;
+    color: aliceblue;
+    line-height: 1.2em;
+}
+
+h2{
+    color:antiquewhite;
+    display: inline;
+}
+
+label{
+    font-size: 1.2em;
+    color: antiquewhite;
+}
+
+select{
+    font-size: 1.2em;
+    background-color: #0f171e;
+    color: #f1f1f1;
+    font-family: "Times New Roman";
+    border-radius: 20px;
+    padding: 4px;
+}
+
+option:hover{
+    background-color: #ddd;
+}
+
+iframe{
+    position: absolute;
+    bottom: 100px;
+    left: 290px;
+}
+
+#Trailer{
+    font-size: 1.5em;
+    background-color: #0f171e;
+    color: azure;
+    font-family: "Times New Roman";
+    height="500px"; width="500px";
+    padding: 14px 28px;
+    border-radius: 20px;
+}
+
+button1{
+    font-size: 1.5em;
+    background-color: #0f171e;
+    color: azure;
+    font-family: "Times New Roman";
+    height="500px"; width="500px";
+    padding: 14px 28px;
+    border-radius: 20px;
+}
